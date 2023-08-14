@@ -23,8 +23,7 @@ let selectCategory = document.querySelectorAll("table td select");
 Array.from(updateProductBtn).forEach((updateBtn, index) => {
     updateBtn.onclick = () => {
         updateBtn.style.display = "none";
-        confirmUpdate[index].style.display = "flex";
-        confirmUpdate[index].style.gap = "7px";
+        confirmUpdate[index].style.display = "inline-block";
         deleteBtn[index].style.display = "none";
 
         // Get the corresponding table row
@@ -102,6 +101,4 @@ Array.from(deleteBtn).forEach(db => {
 });
 
 /* ------------------------------- */
-
-
 

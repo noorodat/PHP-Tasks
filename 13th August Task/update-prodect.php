@@ -1,8 +1,8 @@
 <?php
 include_once('dbh-inc.php');
 
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+if (isset($_POST['id'])) {
+    $id = $_POST['id'];
 
     $p_name = $_POST["productName"] ?? '';
     $p_desc = $_POST["productDescription"] ?? '';
